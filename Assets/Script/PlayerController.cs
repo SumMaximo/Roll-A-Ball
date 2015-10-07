@@ -150,8 +150,8 @@ public class PlayerController : MonoBehaviour
            // PlayerLevelOne.SetActive(false);
             //PlayerLevelOne.
            // PlayerLevelTwo.SetActive(true);
-            //LevelOne.SetActive(false);
-            //LevelTwo.SetActive(true);
+            LevelOne.SetActive(false);
+            LevelTwo.SetActive(true);
         }
         
 
