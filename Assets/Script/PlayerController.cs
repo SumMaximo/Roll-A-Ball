@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Text ScoreText;
     public Text winText;
-    public Vector4 Level2Start;
+    public Vector3 Level2Start;
  //   public Button yes;
  //   public Button no;
 
@@ -52,12 +52,12 @@ public class PlayerController : MonoBehaviour
         MainCamera = GameObject.FindWithTag("MainCamera");
         // Level2End = GameObject.FindWithTag("Level2End");
         //Items = GameObject.FindWithTag("Items");
-        Vector4 Level2Start = transform.TransformPoint(-9, -10, 9);
-        //NO     // Instantiate(PlayerLevelOne, Level2Start, PlayerLevelOne.transform.rotation);
+        Vector3 Level2Start = transform.TransformPoint(-9, -10, 9);
+        //      Instantiate(PlayerLevelOne, Level2Start, PlayerLevelOne.transform.rotation);
 
         //resetText.text = "";
         PlayerLevelTwo.SetActive(false);
-
+        LevelTwoCamera.SetActive(false); 
 
     }
 
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-        Vector3 Level2Start = new Vector4(-9, -10, 9);
+        Vector3 Level2Start = new Vector3(-9, -10, 9);
         
 
         rb.AddForce(movement * speed); //* speed);
@@ -113,6 +113,7 @@ public class PlayerController : MonoBehaviour
             LevelTwo.SetActive(true);
             LevelOne.SetActive(false);
             Instantiate(PlayerLevelOne, Level2Start, PlayerLevelOne.transform.rotation);
+            //PlayerLevelOne.transform.TransformPoint(-9,-10,9);
 
         }
         
@@ -139,13 +140,13 @@ public class PlayerController : MonoBehaviour
         //LevelTwo.SetActive(false);
        // PlayerLevelTwo.SetActive(false);
         MainCamera.SetActive(true);
-        LevelTwoCamera.SetActive(false);
+        //LevelTwoCamera.SetActive(false);
         //PlayerLevelOne.transform(Vector4);
 
         if(score >= 52)
         {
-            LevelTwoCamera.SetActive(true);
-            MainCamera.SetActive(false);
+          //  LevelTwoCamera.SetActive(true);
+           // MainCamera.SetActive(false);
             //Instantiate(PlayerLevelOne, Level2Start, PlayerLevelOne.transform.rotation);
            // PlayerLevelOne.SetActive(false);
             //PlayerLevelOne.

@@ -5,7 +5,7 @@ public class CameraController : MonoBehaviour {
 
     public GameObject player;
     private GameObject PlayerLevelOne;
-    private GameObject PlayerLevelTwo;
+    //private GameObject PlayerLevelTwo;
    // public GameObject LevelOne;
     //public GameObject LevelTwo;
     
