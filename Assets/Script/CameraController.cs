@@ -4,10 +4,8 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
     public GameObject player;
-    private GameObject PlayerLevelOne;
-    //private GameObject PlayerLevelTwo;
-   // public GameObject LevelOne;
-    //public GameObject LevelTwo;
+   // private GameObject PlayerLevelOne;
+    
     
 
     private Vector3 offset;
@@ -16,8 +14,7 @@ public class CameraController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        //LevelOne = GameObject.FindGameObjectWithTag("Level 1");
-        //player = PlayerLevelTwo;
+     
         offset = transform.position - player.transform.position;
         
 
